@@ -1,0 +1,35 @@
+ {
+    "HAPI": "3.2",
+    "catalog": [
+        {
+            "x_group_id": "dart",
+            "x_source": "classpath",
+            "x_classpath": "tilde-geonet.jar",
+            "x_class": "org.hapiserver.source.tilde.geonet.DartCatalog",
+            "x_method": "getCatalog",
+            "x_config": {
+                "info": {
+                    "x_source":"classpath",
+                    "x_classpath": "tilde-geonet.jar",
+                    "x_class":"org.hapiserver.source.tilde.geonet.DartCatalog",
+                    "x_method": "getInfo"
+                },
+                "data": {                     
+                    "source": "classpath",
+                    "x_classpath": "tilde-geonet.jar",             
+                    "x_class":"org.hapiserver.source.tilde.geonet.DartDataHapiRecordSource",
+                    "x_args": [ "${id}" ],
+                    "x_doc_arg1": "the id, like \"NZB\""
+                }
+            }
+        }        
+    ],
+    "about": {
+        "HAPI": "3.3.1",
+        "id":"Geonet-TILDE-Demonstration",
+        "title":"Geonet TILDE Demonstration Server",
+        "contact":"Jeremy Faden <faden@cottagesystems.com>",
+        "description":"Data provided by New Zealand GeoNet TILDE",
+        "x_server_version": "2026-11-13T16:12Z"
+    }    
+}
